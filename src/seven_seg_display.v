@@ -1,0 +1,20 @@
+`timescale 1ns / 1ps
+////////////////////////////////////////////////////////////////////////////////// 
+// Module Name: seven_seg_display
+// Project Name: Step Generator
+// Target Devices: XXXX
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module seven_seg_display(
+
+    );
+endmodule
