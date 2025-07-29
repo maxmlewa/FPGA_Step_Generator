@@ -82,5 +82,6 @@ module testbench_step_selector( );
         check_steps(10'b0000000000, 4'd0);
         
         $display("=== Step Selector Complete with %2d errors ===\n\n", errors);
+        $finish;
     end
 endmodule
