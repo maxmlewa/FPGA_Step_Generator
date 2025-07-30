@@ -3,7 +3,7 @@
 // Module Name: step_counter
 // Project Name: Step Generator
 // Target Devices: Basys 3 (Artix 7)
-// Description: Counter triggered by a clean pulse input. Counts from 0 to steps -1.
+// Description: Counter triggered by a clean pulse input. Counts from 0 to steps.
 //              Wraps around to 0. Freezes at 0 if steps = 0
 // 
 // Dependencies: None
@@ -33,7 +33,7 @@ module step_counter(
         begin
             if (steps == 4'b0)
                 count <= 4'b0;
-            else if(count >= steps -1)
+            else if(count >= steps)
                 count <= 4'b0;
             else
                 count <= count + 1;

@@ -88,20 +88,20 @@ module testbench_step_counter( );
         
         $display("Step size 5");
         // step size = 5, expect count : 0,1,2,3,4,0
-        for (i =0; i<6; i = i+1)
+        for (i =0; i<8; i = i+1)
         begin
             pulse_tick();
-            check_count((i+1) % 5); // expected value after wrap
+            check_count((i+1) % 6); // expected value after wrap
         end
         
         $display("Step size 3");
         // step size 3
         steps = 4'd3; #10;
-        pulse_tick(); check_count(2);
+        pulse_tick(); check_count(3);
         pulse_tick(); check_count(0);
         pulse_tick(); check_count(1); // wrap
         pulse_tick(); check_count(2);
-        pulse_tick(); check_count(0);
+        pulse_tick(); check_count(3);
         
         $display("Step size 0");
         // step size = 0
