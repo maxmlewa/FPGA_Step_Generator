@@ -1,0 +1,39 @@
+=== System Level Testbench ===
+
+5 steps selected
+
+T = 4288000 ns | step_out = 1
+T = 8098000 ns | step_out = 2
+T = 11966000 ns | step_out = 3
+T = 16264000 ns | step_out = 4
+T = 20511000 ns | step_out = 5
+T = 24432000 ns | step_out = 0
+T = 28724000 ns | step_out = 1
+T = 33092000 ns | step_out = 2
+T = 37247000 ns | step_out = 3
+T = 41125000 ns | step_out = 4
+
+3 steps selected, no reset
+
+T = 45495000 ns | step_out = 1
+T = 49816000 ns | step_out = 2
+T = 53705000 ns | step_out = 3
+T = 57645000 ns | step_out = 0
+T = 61800000 ns | step_out = 1
+T = 65619000 ns | step_out = 2
+
+10 steps selected, no reset
+
+T = 69302000 ns | step_out = 3
+T = 73054000 ns | step_out = 4
+T = 77454000 ns | step_out = 5
+T = 81416000 ns | step_out = 6
+T = 85769000 ns | step_out = 7
+T = 89704000 ns | step_out = 8
+T = 93768000 ns | step_out = 9
+T = 97517000 ns | step_out = 10
+T = 101153000 ns | step_out = 0
+T = 105095000 ns | step_out = 1
+T = 109212000 ns | step_out = 2
+T = 112843000 ns | step_out = 3
+=== System Test Complete. Observe waveforms ===

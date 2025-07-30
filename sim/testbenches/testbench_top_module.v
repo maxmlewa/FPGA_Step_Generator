@@ -85,7 +85,7 @@ module testbench_top_module( );
         #50;
         
         // 8 pulses
-        repeat(8)
+        repeat(10)
         begin
             generate_pulse();
             $display("T = %0t ns | step_out = %0d", $time, step_out);
@@ -95,7 +95,7 @@ module testbench_top_module( );
         // reset DUT
         rst = 1; #20; rst = 0;
         
-        $display("\n3 steps selected\n");
+        $display("\n3 steps selected, no reset\n");
         // select 3 steps
         sw = 10'b0000000110;
         #50;
@@ -108,10 +108,9 @@ module testbench_top_module( );
             
         end
         
-        // reset DUT
-        rst = 1; #20; rst = 0;
         
-        $display("\n10 steps selected\n");
+        
+        $display("\n10 steps selected, no reset\n");
         // select 10 steps
         sw = 10'b1111111111;
         #50;
