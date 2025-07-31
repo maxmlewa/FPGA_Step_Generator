@@ -5,7 +5,7 @@ Welcome to a hardware project born from the depth of frustration (as most projec
 ## Motivation and Backstory
 This project started when I stumbled upon [Paul's Curve Tracer](https://www.paulvdiyblogs.net/2021/03/building-curve-tracer-version-3.html). While not as versatile (at least not **yet**) as the traditional Tektronix 577 and 576 Curve Tracers, the Curve Tracer project aims supplement these devices by addressing the inherent bulkiness, cost, and inaccessibility of the obsolete replacement.
 
-Inspired by its elegance, I set out to recreate it but with a few upgrades and generalizations, aiming for support for both PNP and NPN devices, better timing control, and accurate step and waveform coordination.
+Inspired by its elegance, I set out to recreate it but with a few upgrades and generalizations, aiming to support both PNP and NPN devices, achieve better timing control, and accurate step and triangular waveform synchronization.
 
 Things escalated quickly.
 
