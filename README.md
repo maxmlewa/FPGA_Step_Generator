@@ -13,9 +13,9 @@ We first tried the analog route, connecting the synchronization pulses generated
 
 Sounds smart right? Well...it was smart, just not as practical as we'd imagined. Parasitic capacitance, false triggering and painfully slow recovery times as a result of the huge Miller Capacitance turned our dreams of isolation into a jittery and ringing mess.
 
-But then two roads diverged in a breadboard,\n
-And sorry I could not travel both\n
-And be one traveler, long I stoodn\n
+But then two roads diverged in a breadboard, 
+And sorry I could not travel both 
+And be one traveler, long I stood 
 And took the one with a datasheet and actual specs...the CNY17 photoisolator package!
 
 Although the glitches and the lack of speed persisted, the pinout diagrams and switching time charts helped demostify many of the mysteries and inconsistencies inherent in our custom optoisolator. By integrating an SN74LS221 monostable multivibrator, I significantly improved the quality of the clock signal, reducing jitter and virtually eliminating false triggers.
