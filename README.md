@@ -36,7 +36,7 @@ This project implements a clock-synchronized digital step generator entirely on 
 ### Why the Emphasis on Isolation ?
 Simple transistor curve tracers typically share a ground reference between the collector supply (triangular waveform generator in our case) and the base supply (step generator), and that works fine for simple setups. But if you want to test both NPN and PNP devices using the same hardware setup, you need more flexibility, and I needed it as well.
 
-To support both positive going and negative going steps relative to the collector supply, this system isolates the step generator from the collector supply unit. Therefore, a simple selector switch can be used toggle between NPN and PNP modes without rewiring, as done in commercial grade curve tracers.
+To support both positive going and negative going steps relative to the Emitter terminal, this system isolates the step generator from the collector supply unit. Therefore, a simple selector switch can be used toggle between NPN and PNP modes without rewiring, as done in commercial grade curve tracers.
 
 ## System Architecture
 
@@ -63,5 +63,30 @@ From the root folder `FPGA_Step_Generator`, you can access:
 - `sim`: contains the `testbench` folder with the module testbenches and the `results` folder with expected output
 - `constraints`: contains the `.xdc` file for the project
 - `README.md`: you are here! Provides the project summary
+
+## Requirements
+- Vivado : Or any tools to sythesize the design, implement it, generate the bitstream and program the device
+- Basys 3 Board (Artix 7) : or any compatible programmable device
+- External DAC or logic analyzer: I made mine out of a R2R ladder and op-amps for buffering and calibrating the steps
+- Oscilloscope: a bonus for testing and circuit debugging
+
+
+## Future Work
+You can generalize this step generator for almost any precise, pulse-driven signal generation where isolation and noise immunity are critical, and that is the beauty of FPGAs. One of the exciting next steps for this project is to build a software backend to control the system. This would allow for:
+- dynamic step configuration through a PC interface
+- trigger diagnostics and logging including pulse timing and step response
+- GUI-based control panel for live tuning and configuration
+
+## Final Thooughts
+This started as a humble attempt to design a system to help debug transistors, and turned into hardware design, isolation, adn digital pulse precision. If you are tired of flaky counters adn signal noise ruining your staircase wave generation dreams, this project might just save you.
+
+** *and it looks even prettier on the scope!* **
+
+## License
+This project is licensed under the **MIT License**.  
+Free to use, modify, and share for educational and experimental purposes.  
+Go build something cool.
+
+## Acknowlwdgements
 
  
