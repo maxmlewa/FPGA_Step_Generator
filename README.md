@@ -32,3 +32,36 @@ This project implements a clock-synchronized digital step generator entirely on 
 - Edge detection and debouncing to work with external pulse
 - Better noise immunity to accomodate jittery and ringing signals
 - Outputs binary count with supported display on the on board 7-segment display
+
+### Why the Emphasis on Isolation ?
+Simple transistor curve tracers typically share a ground reference between the collector supply (triangular waveform generator in our case) and the base supply (step generator), and that works fine for simple setups. But if you want to test both NPN and PNP devices using the same hardware setup, you need more flexibility, and I needed it as well.
+
+To support both positive going and negative going steps relative to the collector supply, this system isolates the step generator from the collector supply unit. Therefore, a simple selector switch can be used toggle between NPN and PNP modes without rewiring, as done in commercial grade curve tracers.
+
+## System Architecture
+
+This system is composed of the following modules:
+
+| Module                   | Function        |
+|--------------------------|---------------- |
+|`edge_detector_debounced` | Filters noise/glitches and detects rising edges from the external pulse input to output a clean pulse|
+|`step_selector`           | Determinrs the number of steps based on the highest active switch |
+|`step_counter`            | Counts from 0 up to the selected number of steps then resets      |
+|`seven_segment_display`   | Displays the selected step count on the onboard 7-segement display |
+|`top_module`              | Integrates all modules and connects them to the Basys 3 board I/O for full operation |
+
+
+## Testbench Support
+This project includes fully featured testbenches for all modules with:
+- automatic verification of expected results
+- simulated noisy pulses with glitchy edges and jitter, as expected from the optoisolator
+- modular tests for each module and a full system test
+
+## Files and Structure
+From the repo `FPGA_Step_Generator`, you can access:
+- `src`: contains the modules that form the system
+- `sim`: contains the `testbench` folder with the module testbenches and the `results` folder with expected output
+- `constraints`: contains the `.xdc` file for the project
+- `README.md`: you are here! Provides the project summary
+
+ 
