@@ -20,4 +20,15 @@ And took the one with a datasheet and actual specs...the CNY17 photoisolator pac
 
 Although the glitches and the lack of speed persisted, the pinout diagrams and switching time charts helped demostify many of the mysteries and inconsistencies inherent in our custom optoisolator. By integrating an SN74LS221 monostable multivibrator, I significantly improved the quality of the clock signal, reducing jitter and virtually eliminating false triggers.
 
-This success made one thing clear: there was still much more ground to cover. Precision and consistency were non-negotiable in designing a reliable measurement instrument, and to meet those demands, I turned to FPGAs. Their deterministic timing, reconfigurability, and fine-grained control offered a level of performance and flexibility that discrete logic simply could not match.
+This partial success made one thing clear: there was still much more ground to cover. Precision and consistency were non-negotiable in designing a reliable measurement instrument, and to meet those demands, I turned to FPGAs. Their deterministic timing, reconfigurability, and fine-grained control offered a level of performance and flexibility that discrete logic simply could not match. And then came the **Clock-Synchronized Step Generator on Basys 3**.
+
+## What This Project Does
+
+This project implements a clock-synchronized digital step generator entirely on the Basys 3 board using Verilogamd Xilinx Vivado.
+
+### Features
+- Step counter that counts from 0 to a selectable number of steps (1 - 10)
+- Step selection with switches via priority logic
+- Edge detection and debouncing to work with external pulse
+- Better noise immunity to accomodate jittery and ringing signals
+- Outputs binary count with supported display on the on board 7-segment display
