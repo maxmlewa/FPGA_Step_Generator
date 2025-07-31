@@ -1,6 +1,7 @@
 # Clock-Synchronized Step Generator on Basys 3
 Welcome to a hardware project born from the depth of frustration (as most projects are), oscilloscopes, and the desperate desire to generate clean consistent steps for a [Transistor Curve Tracer](https://en.wikipedia.org/wiki/Curve_tracer) without sacrificing sanity or signal integrity. This Verilog-powered FPGA project replaces noisy TTL counters and glitchy multivibrators with a crisp, isolated, glitch resistant **digital step generator**, all running on the Basys 3 FPGA.
 
+
 ## Motivation and Backstory
 This project started when I stumbled upon [Paul's Curve Tracer](https://www.paulvdiyblogs.net/2021/03/building-curve-tracer-version-3.html). While not as versatile (at least not **yet**) as the traditional Tektronix 577 and 576 Curve Tracers, the Curve Tracer project aims supplement these devices by addressing the inherent bulkiness, cost, and inaccessibility of replacement parts owing to their obsolete nature.
 
