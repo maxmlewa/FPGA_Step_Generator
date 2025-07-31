@@ -77,7 +77,7 @@ You can generalize this step generator for almost any precise, pulse-driven sign
 - trigger diagnostics and logging including pulse timing and step response
 - GUI-based control panel for live tuning and configuration
 
-## Final Thooughts
+## Final Thoughts
 This started as a humble attempt to design a system to help debug transistors, and turned into hardware design, isolation, adn digital pulse precision. If you are tired of flaky counters adn signal noise ruining your staircase wave generation dreams, this project might just save you.
 
 *and it looks even prettier on the scope!*
@@ -88,5 +88,9 @@ Free to use, modify, and share for educational and experimental purposes.
 Go build something cool.
 
 ## Acknowlwdgements
-
- 
+Big thanks to the following heroes of engineering, documentation, and patience:
+* [Paul's Curve Tracer](https://www.paulvdiyblogs.net/2021/03/building-curve-tracer-version-3.html) - For inspiring the first clunky, smoke prone but brilliant iteration of a step generator. We stood on the shoulders of that homebrew analog-TTL beast.
+* Xilinx Vivado - For turning the HDL code to hardware magic
+* Basys 3 Board and Reference Manual -  For being the gateway to the Xilinx Vivado Design Suite, laden with treats like switches, PMODs and the seven segment, all crucial for this project
+* Excalidraw - For making the sketches of chaootic ideas somehow look presentable in illustrations
+* Any Engineer Who Ever Wrote About Debouncing - You probably saved me from reinventing a bouncy wheel
