@@ -80,7 +80,7 @@ You can generalize this step generator for almost any precise, pulse-driven sign
 ## Final Thooughts
 This started as a humble attempt to design a system to help debug transistors, and turned into hardware design, isolation, adn digital pulse precision. If you are tired of flaky counters adn signal noise ruining your staircase wave generation dreams, this project might just save you.
 
-** *and it looks even prettier on the scope!* **
+*and it looks even prettier on the scope!*
 
 ## License
 This project is licensed under the **MIT License**.  
