@@ -58,7 +58,7 @@ This project includes fully featured testbenches for all modules with:
 - modular tests for each module and a full system test
 
 ## Files and Structure
-From the repo `FPGA_Step_Generator`, you can access:
+From the root folder `FPGA_Step_Generator`, you can access:
 - `src`: contains the modules that form the system
 - `sim`: contains the `testbench` folder with the module testbenches and the `results` folder with expected output
 - `constraints`: contains the `.xdc` file for the project
