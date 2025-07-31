@@ -27,6 +27,10 @@ And took the one with a datasheet and actual specs...the CNY17 photoisolator pac
 
 Although the glitches and the lack of speed persisted, the pinout diagrams and switching time charts helped demostify many of the mysteries and inconsistencies inherent in our custom optoisolator. By integrating an SN74LS221 monostable multivibrator, I significantly improved the quality of the clock signal, reducing jitter and virtually eliminating false triggers.
 
+<p align = "center">
+  <img width="1539" height="724" alt="Screenshot 2025-07-31 at 5 07 01 PM" src="https://github.com/user-attachments/assets/67369089-6aba-4083-97c6-8c8f254675d7" /> 
+</p>
+
 This partial success made one thing clear: there was still much more ground to cover. Precision and consistency were non-negotiable in designing a reliable measurement instrument, and to meet those demands, I turned to FPGAs. Their deterministic timing, reconfigurability, and fine-grained control offered a level of performance and flexibility that discrete logic simply could not match. And then came the **Clock-Synchronized Step Generator on Basys 3**.
 
 ## What This Project Does
