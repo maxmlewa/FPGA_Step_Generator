@@ -53,6 +53,10 @@ To support both positive going and negative going steps relative to the Emitter 
 
 This system is composed of the following modules:
 
+<p align = "center">
+  <img width="1272" height="656" alt="Screenshot 2025-07-31 at 5 55 55 PM" src="https://github.com/user-attachments/assets/8f67c307-48cc-408c-92fa-b889fbf98b80" />
+</p>
+
 | Module                   | Function        |
 |--------------------------|---------------- |
 |`edge_detector_debounced` | Filters noise/glitches and detects rising edges from the external pulse input to output a clean pulse|
